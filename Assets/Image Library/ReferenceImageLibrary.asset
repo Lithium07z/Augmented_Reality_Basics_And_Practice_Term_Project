@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: ReferenceImageLibrary
+  m_EditorClassIdentifier: 
+  m_GuidLow: 4995949132783165381
+  m_GuidHigh: 5464089072471464329
+  m_DataStore:
+    m_Storage: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5333209134581719670
+      m_GuidHigh: 372921858905384883
+    m_SerializedTextureGuid:
+      m_GuidLow: 8873443020982718596
+      m_GuidHigh: 12866874976821078826
+    m_Size: {x: 0.08, y: 0.060310077}
+    m_SpecifySize: 1
+    m_Name: BombMonster-Marker Card
+    m_Texture: {fileID: 2800000, guid: 00581084cd6a7b242a6bc8aa9e5290b2, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5307352025361260651
+      m_GuidHigh: 1919185132677568916
+    m_SerializedTextureGuid:
+      m_GuidLow: 8211210297917066681
+      m_GuidHigh: 16953819780098909851
+    m_Size: {x: 0.08, y: 0.060310077}
+    m_SpecifySize: 1
+    m_Name: Hornet
+    m_Texture: {fileID: 2800000, guid: d7604db9144271f49b66c9ca431148eb, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5716796279158916430
+      m_GuidHigh: 15638146065188668302
+    m_SerializedTextureGuid:
+      m_GuidLow: 14034454719350887565
+      m_GuidHigh: 11437060044447821834
+    m_Size: {x: 0.08, y: 0.07473684}
+    m_SpecifySize: 1
+    m_Name: Mole
+    m_Texture: {fileID: 2800000, guid: a336d48d6635c2c40a3020a88399b89e, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5172638705999520015
+      m_GuidHigh: 7437369157785396628
+    m_SerializedTextureGuid:
+      m_GuidLow: 1140803240861734689
+      m_GuidHigh: 14322374569186566137
+    m_Size: {x: 0.08, y: 0.05333333}
+    m_SpecifySize: 1
+    m_Name: Bat
+    m_Texture: {fileID: 2800000, guid: da2d9721f2800fd4f91f7498c94bc3c6, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 4670567159632882588
+      m_GuidHigh: 5790685957321866928
+    m_SerializedTextureGuid:
+      m_GuidLow: 16961923838730007508
+      m_GuidHigh: 4872621268183471755
+    m_Size: {x: 0.08, y: 0.060310077}
+    m_SpecifySize: 1
+    m_Name: Mummy
+    m_Texture: {fileID: 2800000, guid: fabb73d4dbdceb648bd616273a079f43, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5057268165124369175
+      m_GuidHigh: 10368648105075314097
+    m_SerializedTextureGuid:
+      m_GuidLow: 13931000924312270070
+      m_GuidHigh: 12979758647472193306
+    m_Size: {x: 0.08, y: 0.060310077}
+    m_SpecifySize: 1
+    m_Name: Anger
+    m_Texture: {fileID: 2800000, guid: f34574f6db87c1541a7fe25cb85d21b4, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 4680667411619217331
+      m_GuidHigh: 972962313409098682
+    m_SerializedTextureGuid:
+      m_GuidLow: 13516468450205367406
+      m_GuidHigh: 12482228731066423419
+    m_Size: {x: 0.08, y: 0.060310077}
+    m_SpecifySize: 1
+    m_Name: Chicken
+    m_Texture: {fileID: 2800000, guid: 3043fc6e2471bb947b9863b0e5c839ad, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 4641003953629521068
+      m_GuidHigh: 13296002332963631543
+    m_SerializedTextureGuid:
+      m_GuidLow: 9697582946999641940
+      m_GuidHigh: 8969916801573375080
+    m_Size: {x: 0.08, y: 0.060310077}
+    m_SpecifySize: 1
+    m_Name: Chick
+    m_Texture: {fileID: 2800000, guid: 6fcca754bc4f869468cc966ece8b7b7c, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5712560926336564013
+      m_GuidHigh: 8854815115067793037
+    m_SerializedTextureGuid:
+      m_GuidLow: 9247027372435644036
+      m_GuidHigh: 1019193236642540745
+    m_Size: {x: 0.08, y: 0.044999998}
+    m_SpecifySize: 1
+    m_Name: Cactus
+    m_Texture: {fileID: 2800000, guid: 02571e840a678054c92c8f4bd9e6240e, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5700811018001115117
+      m_GuidHigh: 7053538030119958182
+    m_SerializedTextureGuid:
+      m_GuidLow: 16515838336152707897
+      m_GuidHigh: 6083462966113937594
+    m_Size: {x: 0.08, y: 0.044999998}
+    m_SpecifySize: 1
+    m_Name: Mushroom
+    m_Texture: {fileID: 2800000, guid: 4a2923390b76e534ba28770b56cd6c54, type: 3}
