@@ -1,0 +1,127 @@
+{
+    "m_SelectedDeviceId": "R3CN30ZMGYZ",
+    "m_SelectedPackage": {
+        "deviceId": "R3CN30ZMGYZ",
+        "name": "kr.ac.hallym.ARFrameworkProject",
+        "processId": 13431,
+        "exited": false
+    },
+    "m_SelectedPriority": 0,
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "R3CN30ZMGYZ",
+            "name": "com.sec.android.app.launcher",
+            "processId": 3398,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CN30ZMGYZ",
+            "name": "kr.ac.hallym.ARFrameworkProject",
+            "processId": 28727,
+            "exited": true
+        },
+        {
+            "deviceId": "R3CN30ZMGYZ",
+            "name": "kr.ac.hallym.ARFrameworkProject",
+            "processId": 29644,
+            "exited": true
+        },
+        {
+            "deviceId": "R3CN30ZMGYZ",
+            "name": "kr.ac.hallym.ARFrameworkProject",
+            "processId": 31003,
+            "exited": true
+        },
+        {
+            "deviceId": "R3CN30ZMGYZ",
+            "name": "kr.ac.hallym.ARFrameworkProject",
+            "processId": 32143,
+            "exited": true
+        },
+        {
+            "deviceId": "R3CN30ZMGYZ",
+            "name": "com.android.settings",
+            "processId": 12851,
+            "exited": false
+        },
+        {
+            "deviceId": "R3CN30ZMGYZ",
+            "name": "kr.ac.hallym.ARFrameworkProject",
+            "processId": 13431,
+            "exited": false
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "com.example.mobile_programming_project",
+            "processId": 6278,
+            "exited": false
+        }
+    ],
+    "m_Tags": {
+        "m_Entries": [
+            {
+                "m_Name": "Filter by all listed tags",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "No Filter",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Tag Control...",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Unity",
+                "m_Selected": true
+            },
+            {
+                "m_Name": "CRASH",
+                "m_Selected": false
+            }
+        ]
+    },
+    "m_MemoryViewerState": {
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
+        "MemoryGroup": 2,
+        "Behavior": 0
+    },
+    "m_FilterOptions": {
+        "m_Filter": "",
+        "m_UseRegularExpressions": false,
+        "m_MatchCase": false
+    },
+    "m_SymbolPaths": [],
+    "m_CaptureVideoSettings": {
+        "TimeLimitEnabled": false,
+        "TimeLimit": 180,
+        "VideoSizeEnabled": false,
+        "VideoSizeX": 1280,
+        "VideoSizeY": 720,
+        "BitRateEnabled": false,
+        "BitRateK": 20000,
+        "DisplayIdEnabled": false,
+        "DisplayId": ""
+    }
+}

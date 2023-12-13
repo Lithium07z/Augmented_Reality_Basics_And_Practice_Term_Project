@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1053683401201",
+    "firebase_url": "https://ar-termproject-c2798-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "ar-termproject-c2798",
+    "storage_bucket": "ar-termproject-c2798.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053683401201:android:0f5fc7645e0331293c0450",
+        "android_client_info": {
+          "package_name": "kr.ac.hallym.ARFrameworkProject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7vuWuSBtUt7UiH9XxZ9M_tywgdQJJDVI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

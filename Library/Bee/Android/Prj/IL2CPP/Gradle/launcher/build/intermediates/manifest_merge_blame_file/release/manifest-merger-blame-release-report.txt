@@ -1,0 +1,395 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="kr.ac.hallym.ARFrameworkProject"
+4    android:installLocation="preferExternal"
+5    android:versionCode="1"
+6    android:versionName="0.1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="24"
+9-->C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="32" />
+10-->C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+11
+12    <supports-screens
+12-->C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:3-163
+13        android:anyDensity="true"
+13-->C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:135-160
+14        android:largeScreens="true"
+14-->C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:78-105
+15        android:normalScreens="true"
+15-->C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:49-77
+16        android:smallScreens="true"
+16-->C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:21-48
+17        android:xlargeScreens="true" />
+17-->C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:106-134
+18
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-67
+19-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:22-64
+20    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+20-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-79
+20-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:22-76
+21    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+21-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:5-81
+21-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:22-78
+22
+23    <uses-feature android:glEsVersion="0x00030000" />
+23-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:5-54
+23-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:19-51
+24    <uses-feature
+24-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:5-17:36
+25        android:name="android.hardware.location.gps"
+25-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:16:9-53
+26        android:required="false" />
+26-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:17:9-33
+27    <uses-feature
+27-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:18:5-20:36
+28        android:name="android.hardware.location"
+28-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:19:9-49
+29        android:required="false" />
+29-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:20:9-33
+30    <uses-feature
+30-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:21:5-23:36
+31        android:name="android.hardware.touchscreen"
+31-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:22:9-52
+32        android:required="false" />
+32-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:23:9-33
+33    <uses-feature
+33-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:24:5-26:36
+34        android:name="android.hardware.touchscreen.multitouch"
+34-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:25:9-63
+35        android:required="false" />
+35-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:26:9-33
+36    <uses-feature
+36-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:27:5-29:36
+37        android:name="android.hardware.touchscreen.multitouch.distinct"
+37-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:28:9-72
+38        android:required="false" />
+38-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:29:9-33
+39
+40    <uses-permission android:name="android.permission.CAMERA" />
+40-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:31:5-65
+40-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:31:22-62
+41
+42    <uses-feature
+42-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:33:5-35:35
+43        android:name="android.hardware.camera.ar"
+43-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:34:9-50
+44        android:required="true" />
+44-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:35:9-32
+45    <uses-feature
+45-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:36:5-38:35
+46        android:name="com.google.ar.core.depth"
+46-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:37:9-48
+47        android:required="true" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+47-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:38:9-32
+48    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+49    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+49-->[com.google.firebase:firebase-database:20.2.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\651646835434bd86e2e8150be92045a9\transformed\jetified-firebase-database-20.2.2\AndroidManifest.xml:24:5-79
+49-->[com.google.firebase:firebase-database:20.2.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\651646835434bd86e2e8150be92045a9\transformed\jetified-firebase-database-20.2.2\AndroidManifest.xml:24:22-76
+50    <uses-permission android:name="android.permission.WAKE_LOCK" />
+50-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\f93171be7f3058e8cc0d3d0a1ab200cb\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:24:5-68
+50-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\f93171be7f3058e8cc0d3d0a1ab200cb\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:24:22-65
+51    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+51-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\f93171be7f3058e8cc0d3d0a1ab200cb\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:25:5-79
+51-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\f93171be7f3058e8cc0d3d0a1ab200cb\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:25:22-76
+52
+53    <queries>
+53-->[:arcore_client:] C:\Users\GVE_KJH\.gradle\caches\transforms-3\e2f7c12da2d5bd12fad3773df67b994b\transformed\jetified-arcore_client\AndroidManifest.xml:20:5-22:15
+54        <package android:name="com.google.ar.core" />
+54-->[:arcore_client:] C:\Users\GVE_KJH\.gradle\caches\transforms-3\e2f7c12da2d5bd12fad3773df67b994b\transformed\jetified-arcore_client\AndroidManifest.xml:21:9-54
+54-->[:arcore_client:] C:\Users\GVE_KJH\.gradle\caches\transforms-3\e2f7c12da2d5bd12fad3773df67b994b\transformed\jetified-arcore_client\AndroidManifest.xml:21:18-51
+55    </queries>
+56
+57    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+57-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\6475f9e48d3f25ba0d44c69a794c1a0c\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:26:5-110
+57-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\6475f9e48d3f25ba0d44c69a794c1a0c\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:26:22-107
+58
+59    <application
+59-->C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:3-83
+60        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+60-->[androidx.core:core:1.2.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\ca1d290bdfdadc69b88725089f5db7cc\transformed\core-1.2.0\AndroidManifest.xml:24:18-86
+61        android:extractNativeLibs="true"
+61-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:40:18-50
+62        android:icon="@mipmap/app_icon"
+62-->C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:49-80
+63        android:label="@string/app_name" >
+63-->C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:16-48
+64        <meta-data
+64-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:41:9-43:33
+65            android:name="unity.splash-mode"
+65-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:42:13-45
+66            android:value="0" />
+66-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:43:13-30
+67        <meta-data
+67-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:44:9-46:36
+68            android:name="unity.splash-enable"
+68-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:45:13-47
+69            android:value="True" />
+69-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:46:13-33
+70        <meta-data
+70-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:47:9-49:36
+71            android:name="unity.launch-fullscreen"
+71-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:48:13-51
+72            android:value="True" />
+72-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:49:13-33
+73        <meta-data
+73-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:50:9-52:37
+74            android:name="unity.allow-resizable-window"
+74-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:51:13-56
+75            android:value="False" />
+75-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:52:13-34
+76        <meta-data
+76-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:53:9-55:50
+77            android:name="notch.config"
+77-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:54:13-40
+78            android:value="portrait|landscape" />
+78-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:55:13-47
+79        <meta-data
+79-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:56:9-58:36
+80            android:name="unity.auto-report-fully-drawn"
+80-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:57:13-57
+81            android:value="true" />
+81-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:58:13-33
+82
+83        <activity
+83-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:60:9-81:20
+84            android:name="com.unity3d.player.UnityPlayerActivity"
+84-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:61:13-66
+85            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+85-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:62:13-194
+86            android:exported="true"
+86-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:63:13-36
+87            android:hardwareAccelerated="false"
+87-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:64:13-48
+88            android:launchMode="singleTask"
+88-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:65:13-44
+89            android:resizeableActivity="false"
+89-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:66:13-47
+90            android:screenOrientation="fullUser"
+90-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:67:13-49
+91            android:theme="@style/UnityThemeSelector" >
+91-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:68:13-54
+92            <intent-filter>
+92-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:69:13-73:29
+93                <category android:name="android.intent.category.LAUNCHER" />
+93-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:70:17-77
+93-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:70:27-74
+94
+95                <action android:name="android.intent.action.MAIN" />
+95-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:72:17-69
+95-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:72:25-66
+96            </intent-filter>
+97
+98            <meta-data
+98-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:75:13-77:40
+99                android:name="unityplayer.UnityActivity"
+99-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:76:17-57
+100                android:value="true" />
+100-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:77:17-37
+101            <meta-data
+101-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:78:13-80:40
+102                android:name="notch_support"
+102-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:79:17-45
+103                android:value="true" />
+103-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:80:17-37
+104        </activity>
+105
+106        <meta-data
+106-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:83:9-85:36
+107            android:name="unityplayer.SkipPermissionsDialog"
+107-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:84:13-61
+108            android:value="true" />
+108-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:85:13-33
+109        <meta-data
+109-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:86:9-88:40
+110            android:name="com.google.ar.core"
+110-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:87:13-46
+111            android:value="required" />
+111-->[:unityLibrary] C:\Users\GVE_KJH\Desktop\ARFrameworkProject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:88:13-37
+112
+113        <service
+113-->[com.google.firebase:firebase-database:20.2.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\651646835434bd86e2e8150be92045a9\transformed\jetified-firebase-database-20.2.2\AndroidManifest.xml:28:9-34:19
+114            android:name="com.google.firebase.components.ComponentDiscoveryService"
+114-->[com.google.firebase:firebase-database:20.2.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\651646835434bd86e2e8150be92045a9\transformed\jetified-firebase-database-20.2.2\AndroidManifest.xml:29:13-84
+115            android:directBootAware="true"
+115-->[com.google.firebase:firebase-common:20.3.3] C:\Users\GVE_KJH\.gradle\caches\transforms-3\9fefde16ff12478d61c224322e89b9b8\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:34:13-43
+116            android:exported="false" >
+116-->[com.google.firebase:firebase-database:20.2.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\651646835434bd86e2e8150be92045a9\transformed\jetified-firebase-database-20.2.2\AndroidManifest.xml:30:13-37
+117            <meta-data
+117-->[com.google.firebase:firebase-database:20.2.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\651646835434bd86e2e8150be92045a9\transformed\jetified-firebase-database-20.2.2\AndroidManifest.xml:31:13-33:85
+118                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+118-->[com.google.firebase:firebase-database:20.2.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\651646835434bd86e2e8150be92045a9\transformed\jetified-firebase-database-20.2.2\AndroidManifest.xml:32:17-109
+119                android:value="com.google.firebase.components.ComponentRegistrar" />
+119-->[com.google.firebase:firebase-database:20.2.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\651646835434bd86e2e8150be92045a9\transformed\jetified-firebase-database-20.2.2\AndroidManifest.xml:33:17-82
+120            <meta-data
+120-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:69:13-71:85
+121                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+121-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:70:17-109
+122                android:value="com.google.firebase.components.ComponentRegistrar" />
+122-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:71:17-82
+123            <meta-data
+123-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\f93171be7f3058e8cc0d3d0a1ab200cb\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:31:13-33:85
+124                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+124-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\f93171be7f3058e8cc0d3d0a1ab200cb\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:32:17-139
+125                android:value="com.google.firebase.components.ComponentRegistrar" />
+125-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\f93171be7f3058e8cc0d3d0a1ab200cb\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:33:17-82
+126            <meta-data
+126-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\GVE_KJH\.gradle\caches\transforms-3\952331ab24c4f10837ee0835a335b2a8\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:18:13-20:85
+127                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+127-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\GVE_KJH\.gradle\caches\transforms-3\952331ab24c4f10837ee0835a335b2a8\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:19:17-127
+128                android:value="com.google.firebase.components.ComponentRegistrar" />
+128-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\GVE_KJH\.gradle\caches\transforms-3\952331ab24c4f10837ee0835a335b2a8\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:20:17-82
+129        </service>
+130
+131        <activity
+131-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:29:9-46:20
+132            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+132-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:30:13-80
+133            android:excludeFromRecents="true"
+133-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:31:13-46
+134            android:exported="true"
+134-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:32:13-36
+135            android:launchMode="singleTask"
+135-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:33:13-44
+136            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+136-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:34:13-72
+137            <intent-filter>
+137-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:35:13-45:29
+138                <action android:name="android.intent.action.VIEW" />
+138-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:36:17-69
+138-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:36:25-66
+139
+140                <category android:name="android.intent.category.DEFAULT" />
+140-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:38:17-76
+140-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:38:27-73
+141                <category android:name="android.intent.category.BROWSABLE" />
+141-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:39:17-78
+141-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:39:27-75
+142
+143                <data
+143-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:41:17-44:51
+144                    android:host="firebase.auth"
+144-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:42:21-49
+145                    android:path="/"
+145-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:43:21-37
+146                    android:scheme="genericidp" />
+146-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:44:21-48
+147            </intent-filter>
+148        </activity>
+149        <activity
+149-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:47:9-64:20
+150            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+150-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:48:13-79
+151            android:excludeFromRecents="true"
+151-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:49:13-46
+152            android:exported="true"
+152-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:50:13-36
+153            android:launchMode="singleTask"
+153-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:51:13-44
+154            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+154-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:52:13-72
+155            <intent-filter>
+155-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:53:13-63:29
+156                <action android:name="android.intent.action.VIEW" />
+156-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:36:17-69
+156-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:36:25-66
+157
+158                <category android:name="android.intent.category.DEFAULT" />
+158-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:38:17-76
+158-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:38:27-73
+159                <category android:name="android.intent.category.BROWSABLE" />
+159-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:39:17-78
+159-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:39:27-75
+160
+161                <data
+161-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:41:17-44:51
+162                    android:host="firebase.auth"
+162-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:42:21-49
+163                    android:path="/"
+163-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:43:21-37
+164                    android:scheme="recaptcha" />
+164-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\GVE_KJH\.gradle\caches\transforms-3\750a5b18542e65d94d5450e52daa7834\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:44:21-48
+165            </intent-filter>
+166        </activity>
+167        <activity
+167-->[com.google.android.gms:play-services-base:18.2.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\4225e610ebc13051e9548f73a774f8c2\transformed\jetified-play-services-base-18.2.0\AndroidManifest.xml:20:9-22:45
+168            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+168-->[com.google.android.gms:play-services-base:18.2.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\4225e610ebc13051e9548f73a774f8c2\transformed\jetified-play-services-base-18.2.0\AndroidManifest.xml:20:19-85
+169            android:exported="false"
+169-->[com.google.android.gms:play-services-base:18.2.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\4225e610ebc13051e9548f73a774f8c2\transformed\jetified-play-services-base-18.2.0\AndroidManifest.xml:22:19-43
+170            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+170-->[com.google.android.gms:play-services-base:18.2.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\4225e610ebc13051e9548f73a774f8c2\transformed\jetified-play-services-base-18.2.0\AndroidManifest.xml:21:19-78
+171
+172        <provider
+172-->[com.google.firebase:firebase-common:20.3.3] C:\Users\GVE_KJH\.gradle\caches\transforms-3\9fefde16ff12478d61c224322e89b9b8\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:25:9-30:39
+173            android:name="com.google.firebase.provider.FirebaseInitProvider"
+173-->[com.google.firebase:firebase-common:20.3.3] C:\Users\GVE_KJH\.gradle\caches\transforms-3\9fefde16ff12478d61c224322e89b9b8\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:26:13-77
+174            android:authorities="kr.ac.hallym.ARFrameworkProject.firebaseinitprovider"
+174-->[com.google.firebase:firebase-common:20.3.3] C:\Users\GVE_KJH\.gradle\caches\transforms-3\9fefde16ff12478d61c224322e89b9b8\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:27:13-72
+175            android:directBootAware="true"
+175-->[com.google.firebase:firebase-common:20.3.3] C:\Users\GVE_KJH\.gradle\caches\transforms-3\9fefde16ff12478d61c224322e89b9b8\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:28:13-43
+176            android:exported="false"
+176-->[com.google.firebase:firebase-common:20.3.3] C:\Users\GVE_KJH\.gradle\caches\transforms-3\9fefde16ff12478d61c224322e89b9b8\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:29:13-37
+177            android:initOrder="100" /> <!-- The minimal version code of ARCore APK required for an app using this SDK. -->
+177-->[com.google.firebase:firebase-common:20.3.3] C:\Users\GVE_KJH\.gradle\caches\transforms-3\9fefde16ff12478d61c224322e89b9b8\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:30:13-36
+178        <meta-data
+178-->[:arcore_client:] C:\Users\GVE_KJH\.gradle\caches\transforms-3\e2f7c12da2d5bd12fad3773df67b994b\transformed\jetified-arcore_client\AndroidManifest.xml:27:9-29:41
+179            android:name="com.google.ar.core.min_apk_version"
+179-->[:arcore_client:] C:\Users\GVE_KJH\.gradle\caches\transforms-3\e2f7c12da2d5bd12fad3773df67b994b\transformed\jetified-arcore_client\AndroidManifest.xml:28:13-62
+180            android:value="231000000" /> <!-- This activity is critical for installing ARCore when it is not already present. -->
+180-->[:arcore_client:] C:\Users\GVE_KJH\.gradle\caches\transforms-3\e2f7c12da2d5bd12fad3773df67b994b\transformed\jetified-arcore_client\AndroidManifest.xml:29:13-38
+181        <activity
+181-->[:arcore_client:] C:\Users\GVE_KJH\.gradle\caches\transforms-3\e2f7c12da2d5bd12fad3773df67b994b\transformed\jetified-arcore_client\AndroidManifest.xml:31:9-37:80
+182            android:name="com.google.ar.core.InstallActivity"
+182-->[:arcore_client:] C:\Users\GVE_KJH\.gradle\caches\transforms-3\e2f7c12da2d5bd12fad3773df67b994b\transformed\jetified-arcore_client\AndroidManifest.xml:32:13-62
+183            android:configChanges="keyboardHidden|orientation|screenSize"
+183-->[:arcore_client:] C:\Users\GVE_KJH\.gradle\caches\transforms-3\e2f7c12da2d5bd12fad3773df67b994b\transformed\jetified-arcore_client\AndroidManifest.xml:33:13-74
+184            android:excludeFromRecents="true"
+184-->[:arcore_client:] C:\Users\GVE_KJH\.gradle\caches\transforms-3\e2f7c12da2d5bd12fad3773df67b994b\transformed\jetified-arcore_client\AndroidManifest.xml:34:13-46
+185            android:exported="false"
+185-->[:arcore_client:] C:\Users\GVE_KJH\.gradle\caches\transforms-3\e2f7c12da2d5bd12fad3773df67b994b\transformed\jetified-arcore_client\AndroidManifest.xml:35:13-37
+186            android:launchMode="singleTop"
+186-->[:arcore_client:] C:\Users\GVE_KJH\.gradle\caches\transforms-3\e2f7c12da2d5bd12fad3773df67b994b\transformed\jetified-arcore_client\AndroidManifest.xml:36:13-43
+187            android:theme="@android:style/Theme.Material.Light.Dialog.Alert" />
+187-->[:arcore_client:] C:\Users\GVE_KJH\.gradle\caches\transforms-3\e2f7c12da2d5bd12fad3773df67b994b\transformed\jetified-arcore_client\AndroidManifest.xml:37:13-77
+188
+189        <receiver
+189-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\6475f9e48d3f25ba0d44c69a794c1a0c\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:29:9-33:20
+190            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+190-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\6475f9e48d3f25ba0d44c69a794c1a0c\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:30:13-85
+191            android:enabled="true"
+191-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\6475f9e48d3f25ba0d44c69a794c1a0c\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:31:13-35
+192            android:exported="false" >
+192-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\6475f9e48d3f25ba0d44c69a794c1a0c\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:32:13-37
+193        </receiver>
+194
+195        <service
+195-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\6475f9e48d3f25ba0d44c69a794c1a0c\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:35:9-38:40
+196            android:name="com.google.android.gms.measurement.AppMeasurementService"
+196-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\6475f9e48d3f25ba0d44c69a794c1a0c\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:36:13-84
+197            android:enabled="true"
+197-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\6475f9e48d3f25ba0d44c69a794c1a0c\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:37:13-35
+198            android:exported="false" />
+198-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\6475f9e48d3f25ba0d44c69a794c1a0c\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:38:13-37
+199        <service
+199-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\6475f9e48d3f25ba0d44c69a794c1a0c\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:39:9-43:72
+200            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+200-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\6475f9e48d3f25ba0d44c69a794c1a0c\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:40:13-87
+201            android:enabled="true"
+201-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\6475f9e48d3f25ba0d44c69a794c1a0c\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:41:13-35
+202            android:exported="false"
+202-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\6475f9e48d3f25ba0d44c69a794c1a0c\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:42:13-37
+203            android:permission="android.permission.BIND_JOB_SERVICE" />
+203-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\6475f9e48d3f25ba0d44c69a794c1a0c\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:43:13-69
+204
+205        <meta-data
+205-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\2a1e0944adc62c4e7f3dd834f88e4f24\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+206            android:name="com.google.android.gms.version"
+206-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\2a1e0944adc62c4e7f3dd834f88e4f24\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+207            android:value="@integer/google_play_services_version" />
+207-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\GVE_KJH\.gradle\caches\transforms-3\2a1e0944adc62c4e7f3dd834f88e4f24\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+208    </application>
+209
+210</manifest>
