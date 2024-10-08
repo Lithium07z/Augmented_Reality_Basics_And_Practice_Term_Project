@@ -12,7 +12,7 @@ using static UnityEngine.XR.ARSubsystems.XRCpuImage;
 public class DB_Manager : MonoBehaviour
 {
     public static DB_Manager instance;
-    public string databaseURL = "https://ar-termproject-c2798-default-rtdb.asia-southeast1.firebasedatabase.app/";
+    public string databaseURL = "deleted";
     public FirebaseApp app;
 
     Vector2 currentPos;
@@ -23,7 +23,7 @@ public class DB_Manager : MonoBehaviour
     private void Awake()
     {
         
-        databaseURL = "https://ar-termproject-c2798-default-rtdb.asia-southeast1.firebasedatabase.app/";
+        databaseURL = "deleted";
         Debug.Log("---------------------------DB_Manager Start---------------------------");
 
         Firebase.FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task => {
@@ -57,10 +57,10 @@ public class DB_Manager : MonoBehaviour
 
     void Start()
     {
-        // DBÀÇ URLÀ» ¼³Á¤ÇÑ´Ù.
+        // DBì˜ URLì„ ì„¤ì •í•œë‹¤.
         FirebaseApp.DefaultInstance.Options.DatabaseUrl = new System.Uri(databaseURL);
 
-        // µ¥ÀÌÅÍ¸¦ DB¿¡ ÀúÀåÇÑ´Ù.
+        // ë°ì´í„°ë¥¼ DBì— ì €ì¥í•œë‹¤.
         SaveData();
     }
 
@@ -73,7 +73,7 @@ public class DB_Manager : MonoBehaviour
     void SaveData()
     {
         Debug.Log("----------------------------Save Data----------------------------");
-        // ÀúÀå¿ë Å¬·¡½º º¯¼ö¸¦ »ı¼ºÇÑ´Ù.
+        // ì €ì¥ìš© í´ë˜ìŠ¤ ë³€ìˆ˜ë¥¼ ìƒì„±í•œë‹¤.
         ImageGPSData data1 = new ImageGPSData("BombMonster", 37.88622f, 127.7352f, false);
         ImageGPSData data2 = new ImageGPSData("Bat", 37.88622f, 127.7352f, false);
         ImageGPSData data3 = new ImageGPSData("Muumy", 37.88622f, 127.7352f, false);
@@ -83,7 +83,7 @@ public class DB_Manager : MonoBehaviour
         ImageGPSData data7 = new ImageGPSData("Mole", 37.88622f, 127.7352f, false);
         ImageGPSData data8 = new ImageGPSData("Hornet", 37.88622f, 127.7352f, false);
 
-        // Å¬·¡½º µ¥ÀÌÅÍ¸¦ json ¹®¼­ Çü½ÄÀ¸·Î º¯È¯ÇÑ´Ù.
+        // í´ë˜ìŠ¤ ë°ì´í„°ë¥¼ json ë¬¸ì„œ í˜•ì‹ìœ¼ë¡œ ë³€í™˜í•œë‹¤.
         string jsonBombMonster = JsonUtility.ToJson(data1);
         string jsonBat = JsonUtility.ToJson(data2);
         string jsonMummy = JsonUtility.ToJson(data3);
@@ -93,11 +93,11 @@ public class DB_Manager : MonoBehaviour
         string jsonMole = JsonUtility.ToJson(data7);
         string jsonHornet = JsonUtility.ToJson(data8);
 
-        // DBÀÇ ÃÖ»ó´Ü(Root) µğ·ºÅä¸®¸¦ Ã£´Â´Ù.
+        // DBì˜ ìµœìƒë‹¨(Root) ë””ë ‰í† ë¦¬ë¥¼ ì°¾ëŠ”ë‹¤.
         DatabaseReference refData = FirebaseDatabase.GetInstance(Firebase.FirebaseApp.DefaultInstance, databaseURL).RootReference;
 
-        // ÃÖ»ó´Ü µğ·ºÅä¸®¸¦ ±âÁØÀ¸·Î ÇÏÀ§¿¡ Marker¶ó´Â µğ·ºÅä¸®¸¦ ¸¸µé°í
-        // MarkerÀÇ ÇÏÀ§ µğ·ºÅä¸®·Î json ¹®¼­ µ¥ÀÌÅÍ¸¦ ³Ö´Â´Ù.
+        // ìµœìƒë‹¨ ë””ë ‰í† ë¦¬ë¥¼ ê¸°ì¤€ìœ¼ë¡œ í•˜ìœ„ì— Markerë¼ëŠ” ë””ë ‰í† ë¦¬ë¥¼ ë§Œë“¤ê³ 
+        // Markerì˜ í•˜ìœ„ ë””ë ‰í† ë¦¬ë¡œ json ë¬¸ì„œ ë°ì´í„°ë¥¼ ë„£ëŠ”ë‹¤.
         refData.Child("Markers").Child("Data1").SetRawJsonValueAsync(jsonBombMonster);
         refData.Child("Markers").Child("Data2").SetRawJsonValueAsync(jsonBat);
         refData.Child("Markers").Child("Data3").SetRawJsonValueAsync(jsonMummy);
@@ -110,37 +110,37 @@ public class DB_Manager : MonoBehaviour
         Debug.Log("[MarkerAR] Data Saved!");
     }
 
-    // µ¥ÀÌÅÍº£ÀÌ½º·ÎºÎÅÍ µ¥ÀÌÅÍ¸¦ ÀĞ¾î¿À´Â ÇÔ¼ö 
+    // ë°ì´í„°ë² ì´ìŠ¤ë¡œë¶€í„° ë°ì´í„°ë¥¼ ì½ì–´ì˜¤ëŠ” í•¨ìˆ˜ 
     public IEnumerator LoadData(Vector2 myPos, Transform trackedImage)
     {
-        // ÇöÀç ³ªÀÇ À§Ä¡¸¦ ÀúÀåÇÑ´Ù.
+        // í˜„ì¬ ë‚˜ì˜ ìœ„ì¹˜ë¥¼ ì €ì¥í•œë‹¤.
         currentPos = myPos;
 
-        // µ¥ÀÌÅÍ¸¦ ÀĞ±â À§ÇÑ ±âÁØÀÌ µÇ´Â ³ëµå¸¦ Ã£´Â´Ù.
+        // ë°ì´í„°ë¥¼ ì½ê¸° ìœ„í•œ ê¸°ì¤€ì´ ë˜ëŠ” ë…¸ë“œë¥¼ ì°¾ëŠ”ë‹¤.
         DatabaseReference refData = FirebaseDatabase.GetInstance(Firebase.FirebaseApp.DefaultInstance, databaseURL).GetReference("Markers");
 
-        // DB¿¡¼­ µ¥ÀÌÅÍ¸¦ ¹Ş¾Æ¿À±â
+        // DBì—ì„œ ë°ì´í„°ë¥¼ ë°›ì•„ì˜¤ê¸°
         isSearch = true;
         refData.GetValueAsync().ContinueWith(LoadFunc);
 
-        // µ¥ÀÌÅÍ¸¦ ¹Ş¾Æ¿À´Â µ¿¾È¿¡´Â ÀÌ ÇÔ¼ö¸¦ Àá½Ã ´ë±âÇÑ´Ù.
+        // ë°ì´í„°ë¥¼ ë°›ì•„ì˜¤ëŠ” ë™ì•ˆì—ëŠ” ì´ í•¨ìˆ˜ë¥¼ ì ì‹œ ëŒ€ê¸°í•œë‹¤.
         while (isSearch)
         {
             yield return null;
         }
 
-        // Resources Æú´õ¿¡¼­ ÀÌ¹ÌÁö ÀÌ¸§°ú µ¿ÀÏÇÑ ÀÌ¸§ÀÇ ÇÁ¸®ÆÕÀ» Ã£´Â´Ù.
+        // Resources í´ë”ì—ì„œ ì´ë¯¸ì§€ ì´ë¦„ê³¼ ë™ì¼í•œ ì´ë¦„ì˜ í”„ë¦¬íŒ¹ì„ ì°¾ëŠ”ë‹¤.
         GameObject imagePrefab = Resources.Load<GameObject>(objectName);
 
         if (imagePrefab != null)
         {
-            // ¸¸ÀÏ ÀÎ½ÄÇÑ ÀÌ¹ÌÁö¿¡ µî·ÏµÈ ÀÚ½Ä ¿ÀºêÁ§Æ®°¡ ¾ø´Ù¸é...
+            // ë§Œì¼ ì¸ì‹í•œ ì´ë¯¸ì§€ì— ë“±ë¡ëœ ìì‹ ì˜¤ë¸Œì íŠ¸ê°€ ì—†ë‹¤ë©´...
             if (trackedImage.transform.childCount < 1)
             {
-                // ÀÌ¹ÌÁöÀÇ À§Ä¡¿¡ °Ë»öµÈ ÇÁ¸®ÆÕÀ» »ı¼ºÇÑ´Ù.
+                // ì´ë¯¸ì§€ì˜ ìœ„ì¹˜ì— ê²€ìƒ‰ëœ í”„ë¦¬íŒ¹ì„ ìƒì„±í•œë‹¤.
                 GameObject go = Instantiate(imagePrefab, trackedImage.transform.position, trackedImage.transform.rotation);
 
-                // »ı¼ºµÈ ¿ÀºêÁ§Æ®¸¦ ÀÌ¹ÌÁöÀÇ ÀÚ½Ä ¿ÀºêÁ§Æ®·Î µî·ÏÇÑ´Ù.
+                // ìƒì„±ëœ ì˜¤ë¸Œì íŠ¸ë¥¼ ì´ë¯¸ì§€ì˜ ìì‹ ì˜¤ë¸Œì íŠ¸ë¡œ ë“±ë¡í•œë‹¤.
                 go.transform.SetParent(trackedImage.transform);
             }
         }
@@ -158,30 +158,30 @@ public class DB_Manager : MonoBehaviour
         }
         else if (task.IsCompleted)
         {
-            // DB µ¥ÀÌÅÍ¸¦ °¡Á®¿Â´Ù.
+            // DB ë°ì´í„°ë¥¼ ê°€ì ¸ì˜¨ë‹¤.
             DataSnapshot snapshot = task.Result;
 
-            // °¡Á®¿Â DB µ¥ÀÌÅÍ¸¦ ¼øÈ¸ÇÑ´Ù.
+            // ê°€ì ¸ì˜¨ DB ë°ì´í„°ë¥¼ ìˆœíšŒí•œë‹¤.
             foreach (DataSnapshot data in snapshot.Children)
             {
-                // DB ½º³À¼¦ µ¥ÀÌÅÍ¸¦ Json µ¥ÀÌÅÍ·Î º¯È¯ÇÑ´Ù.
+                // DB ìŠ¤ëƒ…ìƒ· ë°ì´í„°ë¥¼ Json ë°ì´í„°ë¡œ ë³€í™˜í•œë‹¤.
                 string myData = data.GetRawJsonValue();
 
-                // Json µ¥ÀÌÅÍ¸¦ ´Ù½Ã ImageGPSData·Î º¯È¯ÇÑ´Ù.
+                // Json ë°ì´í„°ë¥¼ ë‹¤ì‹œ ImageGPSDataë¡œ ë³€í™˜í•œë‹¤.
                 ImageGPSData myClassData = JsonUtility.FromJson<ImageGPSData>(myData);
 
-                // ¸¸ÀÏ, ´©±º°¡ ´Ù¸¥ »ç¿ëÀÚ¿¡°Ô Æ÷È¹µÇÁö ¾Ê¾Ò´Ù¸é...
+                // ë§Œì¼, ëˆ„êµ°ê°€ ë‹¤ë¥¸ ì‚¬ìš©ìì—ê²Œ í¬íšë˜ì§€ ì•Šì•˜ë‹¤ë©´...
                 if (!myClassData.isCaptured)
                 {
-                    // DB¿¡ ÀúÀåµÈ À§Ä¡¸¦ Vector2 ÇüÅÂ·Î ÀúÀåÇÑ´Ù.
+                    // DBì— ì €ì¥ëœ ìœ„ì¹˜ë¥¼ Vector2 í˜•íƒœë¡œ ì €ì¥í•œë‹¤.
                     Vector2 dataPos = new Vector2(myClassData.latitude, myClassData.longitude);
 
-                    // DBÀÇ À§Ä¡ µ¥ÀÌÅÍ¿Í ³ªÀÇ ÇöÀç À§Ä¡ µ¥ÀÌÅÍ¸¦ ºñ±³ÇÏ¿© °Å¸®¸¦ ±¸ÇÑ´Ù.
+                    // DBì˜ ìœ„ì¹˜ ë°ì´í„°ì™€ ë‚˜ì˜ í˜„ì¬ ìœ„ì¹˜ ë°ì´í„°ë¥¼ ë¹„êµí•˜ì—¬ ê±°ë¦¬ë¥¼ êµ¬í•œë‹¤.
                     float distance = Vector2.Distance(currentPos, dataPos);
 
                     if (distance < 0.001f)
                     {
-                        // »ı¼ºÇÒ ÇÁ¸®ÆÕ ÀÌ¸§°ú DB Å°ÀÇ °ªÀ» ÀúÀåÇÑ´Ù.
+                        // ìƒì„±í•  í”„ë¦¬íŒ¹ ì´ë¦„ê³¼ DB í‚¤ì˜ ê°’ì„ ì €ì¥í•œë‹¤.
                         objectName = myClassData.name;
                         currentKey = data.Key;
                     }
@@ -193,13 +193,13 @@ public class DB_Manager : MonoBehaviour
 
     public void UpdateCaptured()
     {
-        // µ¥ÀÌÅÍ¸¦ º¯°æÇÒ ³ëµåÀÇ À§Ä¡¸¦ °áÁ¤ÇÑ´Ù.
+        // ë°ì´í„°ë¥¼ ë³€ê²½í•  ë…¸ë“œì˜ ìœ„ì¹˜ë¥¼ ê²°ì •í•œë‹¤.
         string dataPath = "Markers/" + currentKey + "/isCaptured";
 
-        // µ¥ÀÌÅÍ °æ·Î¸¦ ±â¹İÀ¸·Î DMÀÇ ³ëµå À§Ä¡¸¦ Ã£´Â´Ù.
+        // ë°ì´í„° ê²½ë¡œë¥¼ ê¸°ë°˜ìœ¼ë¡œ DMì˜ ë…¸ë“œ ìœ„ì¹˜ë¥¼ ì°¾ëŠ”ë‹¤.
         DatabaseReference refData = FirebaseDatabase.GetInstance(Firebase.FirebaseApp.DefaultInstance, databaseURL).GetReference(dataPath);
 
-        // Ã£Àº °æ·ÎÀÇ °ªÀ» true·Î º¯°æÇÑ´Ù.
+        // ì°¾ì€ ê²½ë¡œì˜ ê°’ì„ trueë¡œ ë³€ê²½í•œë‹¤.
         if (refData != null)
         {
             refData.SetValueAsync(true);
