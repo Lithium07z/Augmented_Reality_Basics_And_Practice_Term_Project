@@ -251,3 +251,27 @@ Unity 2022.3.8f1
 이 저장소는 **증강현실 기초 및 실습 수업에서 AR Foundation을 이용해 구현한 모바일 AR 텀 프로젝트와 실습 결과를 보존하기 위한 저장소**입니다.
 
 AR Tracking, Location-based AR, Firebase 연동 및 모바일 AR Interaction을 하나의 프로젝트에서 실험하고 구현하는 것을 목표로 했습니다.
+
+## 로컬 설정과 서명키
+
+Unity의 Library, Logs 등 생성 파일과 개인 서명키는 Git에 커밋하지 않습니다.
+프로젝트를 처음 열면 Unity가 필요한 캐시를 다시 생성합니다.
+
+Android 빌드에 사용할 서명키는 저장소 외부의 안전한 위치에 보관하고 Unity의
+Publishing Settings에서 지정하세요. 과거에 공개된 키를 새 배포에 재사용하지 마세요.
+이미 출시한 앱에 사용한 키라면 앱 서명키와 업로드 키를 구분하여 배포 플랫폼의
+키 교체 절차를 먼저 확인해야 합니다. Git에서 지우는 것만으로 기존 키가 폐기되지는 않습니다.
+
+
+## Firebase 설정
+
+Firebase Console에서 본인 프로젝트의 Android 설정 파일을 내려받아
+`Assets/google-services.json`에 배치하세요. `Assets/StreamingAssets/google-services.json`은
+Firebase Unity SDK가 생성하거나 프로젝트의 기존 빌드 절차에 따라 준비합니다.
+두 파일과 관련 meta 파일, Firebase가 생성하는
+`Assets/Firebase/Editor/res/values/googleservices.xml`은 커밋하지 않습니다.
+
+Google Cloud에서 API 키를 필요한 Firebase API로 제한하고, 사용 중인 Firebase 제품의
+Security Rules 및 App Check를 확인하세요. 클라이언트 API 키를 숨기는 것만으로 데이터가
+보호되지는 않습니다. Firebase용 공개 키에 Gemini 등 별도 유료 API 권한을 추가하지 마세요.
+

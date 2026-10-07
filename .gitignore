@@ -1,0 +1,21 @@
+
+
+# Local configuration and private signing keys
+/[Ll]ibrary/
+/[Ll]ogs/
+/[Tt]emp/
+/[Oo]bj/
+/[Uu]ser[Ss]ettings/
+*.keystore
+*.keystore.meta
+*.jks
+*.jks.meta
+.env
+.env.*
+!.env.example
+/Assets/google-services.json
+/Assets/google-services.json.meta
+/Assets/StreamingAssets/google-services.json
+/Assets/StreamingAssets/google-services.json.meta
+/Assets/Firebase/Editor/res/values/googleservices.xml
+/Assets/Firebase/Editor/res/values/googleservices.xml.meta
